@@ -57,11 +57,11 @@ export default function PostPage() {
       <button onClick={() => router.back()} className="text-gray-500 hover:underline mb-4">← Back</button>
       <div className="bg-white shadow-md rounded-lg p-6">
         <div className="flex items-center space-x-2 mb-4">
-          <img src="/path-to-author-image.jpg" alt="Author" className="w-10 h-10 rounded-full" />
+          <img src="/user.jpg" alt="Author" className="w-10 h-10 rounded-full" />
           <span className="text-gray-500">Authors name • 7 July • 12 min read • Member-only</span>
         </div>
         <h1 className="text-4xl font-bold mb-4 text-black">{post.title}</h1>
-        <img src="/path-to-image.jpg" alt="Post Image" className="w-full h-64 object-cover rounded-lg mb-4"/>
+        <img src="/pexels.jpg" alt="Post Image" className="w-full h-64 object-cover rounded-lg mb-4"/>
         <p className="text-gray-600 mb-4">{post.body}</p>
         <button onClick={() => setIsEditing(!isEditing)} className="bg-yellow-500 text-white p-2 rounded mb-4">
           {isEditing ? 'Cancel Edit' : 'Edit Post'}
